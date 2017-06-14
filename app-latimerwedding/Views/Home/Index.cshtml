@@ -14,7 +14,7 @@
         $('body p').each(function (i) {
           $this = $(this);
           var txt = $this.text();
-          var n = txt.replace('the','<span class=\"text-penis\">PENIS</span>');
+          var n = txt.replace('/the/g','<span class=\"text-penis\">PENIS</span>');
           $this.html(n);
 					
 				})	
