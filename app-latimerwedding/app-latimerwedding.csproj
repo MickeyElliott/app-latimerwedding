@@ -172,6 +172,7 @@
     <Content Include="assets\css\skin\tan\tan.css" />
     <Content Include="assets\css\slidebars\slidebars.css" />
     <Content Include="assets\css\slidebars\slidebars.min.css" />
+    <Content Include="assets\css\custom.css" />
     <Content Include="assets\css\style.css" />
     <Content Include="assets\images\favicon.jpg" />
     <Content Include="assets\images\header-01.jpg" />
