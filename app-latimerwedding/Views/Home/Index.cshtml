@@ -10,8 +10,13 @@
     if (isPenisMode) {
       $(function () {
         $('body').addClass('penis-mode');
-        var replaced = $("body").html().replace('the','<span class="text-penis">PENIS</span>');
-$("body").html(replaced);
+        
+
+        $("*:contains('the')").each(function() {
+    var replaced = $(this).html().replace(/the/g, '<span class="text-penis">PENIS</span>');
+    $(this).html(replaced);
+        });
+
       });
     }
   </script>
