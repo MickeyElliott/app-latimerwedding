@@ -12,9 +12,9 @@
         $('body').addClass('penis-mode');
         
 
-        $("*:contains('the')").each(function() {
-    var replaced = $(this).html().replace(/the/g, '<span class="text-penis">PENIS</span>');
-    $(this).html(replaced);
+        $("div:contains('the'), p:contains('the')").each(function() {
+          var replaced = $(this).html().replace(/the/g, '<span class="text-penis">PENIS</span>');
+          $(this).html(replaced);
         });
 
       });
