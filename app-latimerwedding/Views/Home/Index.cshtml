@@ -1,14 +1,15 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Aaron & Morgan";
     var isPenisMode = (ViewBag.PenisMode != null) ? ViewBag.PenisMode : false;
 }
 
 @section scripts {
   <script>
+    $(function () {
     var isPenisMode = "@isPenisMode";
-
-    if (isPenisMode) {
-      $(function () {
+    console.log('isPenisMode: ' +isPenisMode);
+    if (isPenisMode === 'True') {
+      
 
         function replaceAll(str, find, replace) {
   return str.replace(new RegExp(find, 'g'), replace);
@@ -27,8 +28,9 @@
        
        
 
+      }
+      
       });
-    }
   </script>
   }
 
@@ -172,8 +174,8 @@
               <div class="alignment">
                 <div class="v-align center-middle">
 
-                  <a href="profile-him.html" class="de-button outline medium">
-                    ABOUT HIM
+                  <a href="//instagram.com/aaron_latimer" class="de-button outline medium">
+                    Instagram
                   </a>
 
                 </div>
@@ -222,8 +224,8 @@
               <div class="alignment">
                 <div class="v-align center-middle">
 
-                  <a href="profile-her.html" class="de-button outline medium">
-                    ABOUT HER
+                  <a href="//instagram.com/morganleanndepaoli/" class="de-button outline medium">
+                    Instagram
                   </a>
 
                 </div>
@@ -244,7 +246,7 @@
 
   <!-- LOCATION & COUNTDOWN SECTION -->
   <section id="location-countdown">
-    <div class="image-divider auto-height" style="background-image:url(http://placehold.it/1900x1267);" data-stellar-background-ratio="0.5">
+    <div class="image-divider auto-height" style="background-image:url(/assets/images/parralax03.jpg);" data-stellar-background-ratio="0.5">
 
       <div class="divider-overlay"></div>
 
@@ -325,13 +327,13 @@
             <div class="row">
 
               <!-- ITEM-1 -->
-              <div class="wedding-item col-md-4 animation fadeIn">
+              <div class="wedding-item col-md-6 animation fadeIn">
 
                 <!--PHOTO-ITEM-->
                 <div class="photo-item">
 
                   <!--PHOTO-->
-                  <img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-in">
+                  <img src="/assets/images/parralax-01.jpg" alt="" class="hover-animation image-zoom-in">
 
                   <!--PHOTO OVERLAY-->
                   <div class="layer wh95 hidden-black-overlay hover-animation fade-in">
@@ -355,20 +357,20 @@
                 </div><!--END of PHOTO-ITEM-->
                 <!-- TITLE & EXCERPT -->
                 <div class="title-excerpt">
-                  <h3><a href="location.html">LOCATION</a></h3>
+                  <h3><a href="/location">LOCATION</a></h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante quis pharetra. Nullam non </p>
                 </div>
                 <!-- END of TITLE & EXCERPT -->
 
               </div><!-- END of ITEM-1 -->
               <!-- ITEM-2 -->
-              <div class="wedding-item col-md-4 animation delay1 fadeIn">
+              <div class="wedding-item col-md-6 animation delay1 fadeIn">
 
                 <!--PHOTO-ITEM-->
                 <div class="photo-item">
 
                   <!--PHOTO-->
-                  <img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-in">
+                  <img src="/assets/images/parralax-02.jpg" alt="" class="hover-animation image-zoom-in">
 
                   <!--PHOTO OVERLAY-->
                   <div class="layer wh95 hidden-black-overlay hover-animation fade-in">
@@ -382,7 +384,7 @@
                     <div class="alignment">
                       <div class="v-align center-middle">
 
-                        <a href="gift.html" class="de-button outline small">
+                        <a href="/registry" class="de-button outline small">
                           GIFT LIST
                         </a>
 
@@ -399,7 +401,7 @@
                 <!-- END of TITLE & EXCERPT -->
 
               </div><!-- END of ITEM-2 -->
-              <!-- ITEM-3 -->
+              @*<!-- ITEM-3 -->
               <div class="wedding-item col-md-4 animation delay2 fadeIn">
 
                 <!--PHOTO-ITEM-->
@@ -436,7 +438,7 @@
                 </div>
                 <!-- END of TITLE & EXCERPT -->
 
-              </div> <!-- END of ITEM-3 -->
+              </div> <!-- END of ITEM-3 -->*@
 
             </div>
 
