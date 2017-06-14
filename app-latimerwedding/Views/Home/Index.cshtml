@@ -20,8 +20,8 @@
         $('body p').each(function (i) {
           $this = $(this);
           var txt = $this.text();
-          replaceAll(txt,'the','<span class="text-penis">PENIS</span>');
-         
+          var n = replaceAll(txt,'the','<span class="text-penis">PENIS</span>');
+          $this.html(n);
 					
 				})	
        
