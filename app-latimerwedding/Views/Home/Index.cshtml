@@ -17,7 +17,7 @@
 
         $('body').addClass('penis-mode');
         
-        $('p, div, h1, h2, h3, h4, h5, h6, strong').each(function (i) {
+        $('body p, h1, h2, h3, h4, h5, h6, strong').each(function (i) {
           $this = $(this);
           var txt = $this.text();
           var n = replaceAll(txt,'the','<span class="text-penis">PENIS</span>');
