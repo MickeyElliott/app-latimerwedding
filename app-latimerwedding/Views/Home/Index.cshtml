@@ -3,6 +3,20 @@
     var isPenisMode = (ViewBag.PenisMode != null) ? ViewBag.PenisMode : false;
 }
 
+@section scripts {
+  <script>
+    var isPenisMode = "@isPenisMode";
+
+    if (isPenisMode) {
+      $(function () {
+        $('body').addClass('penis-mode');
+        var replaced = $("body").html().replace('the','<span class="text-penis">PENIS</span>');
+$("body").html(replaced);
+      });
+    }
+  </script>
+  }
+
 <!-- MAIN SLIDER -->
 <section id="main-slider" class="flexslider fullscreen">
 
