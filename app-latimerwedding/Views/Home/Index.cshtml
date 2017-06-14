@@ -1,6 +1,6 @@
 ﻿@{
     ViewBag.Title = "Home Page";
-    var isPenisMode = (bool)Session["PenisMode"];
+    var isPenisMode = (ViewBag.PenisMode != null) ? ViewBag.PenisMode : false;
 }
 
 <!-- MAIN SLIDER -->
