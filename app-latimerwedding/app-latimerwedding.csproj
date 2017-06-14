@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BF527F57-0272-4CE3-95E3-47F1AD24D2D1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>app_latimerwedding</RootNamespace>
+    <AssemblyName>app-latimerwedding</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\animate\animate.css" />
+    <Content Include="assets\css\bootstrap\bootstrap-theme.css" />
+    <Content Include="assets\css\bootstrap\bootstrap-theme.min.css" />
+    <Content Include="assets\css\bootstrap\bootstrap.css" />
+    <Content Include="assets\css\bootstrap\bootstrap.min.css" />
+    <Content Include="assets\css\countdown\jquery.countdown.css" />
+    <Content Include="assets\css\flexslider\flexslider.css" />
+    <Content Include="assets\css\flexslider\fonts\flexslider-icon.svg" />
+    <Content Include="assets\css\flexslider\images\bg_play_pause.png" />
+    <Content Include="assets\css\fonts\fontello\css\animation.css" />
+    <Content Include="assets\css\fonts\fontello\css\fontello-codes.css" />
+    <Content Include="assets\css\fonts\fontello\css\fontello-embedded.css" />
+    <Content Include="assets\css\fonts\fontello\css\fontello-ie7-codes.css" />
+    <Content Include="assets\css\fonts\fontello\css\fontello-ie7.css" />
+    <Content Include="assets\css\fonts\fontello\css\fontello.css" />
+    <Content Include="assets\css\fonts\fontello\demo.html" />
+    <Content Include="assets\css\fonts\fontello\font\fontello.svg" />
+    <Content Include="assets\css\fonts\fontello\LICENSE.txt" />
+    <Content Include="assets\css\fonts\fontello\README.txt" />
+    <Content Include="assets\css\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\css\magnific-popup\magnific-popup.css" />
+    <Content Include="assets\css\magnific-popup\pace\pace-theme-minimal.tmpl.css" />
+    <Content Include="assets\css\owlcarousel\AjaxLoader.gif" />
+    <Content Include="assets\css\owlcarousel\grabbing.png" />
+    <Content Include="assets\css\owlcarousel\owl.carousel.css" />
+    <Content Include="assets\css\owlcarousel\owl.theme.css" />
+    <Content Include="assets\css\owlcarousel\owl.transitions.css" />
+    <Content Include="assets\css\preloader-couple-name.css" />
+    <Content Include="assets\css\preloader-default.css" />
+    <Content Include="assets\css\preloader.css" />
+    <Content Include="assets\css\skin\coral-red\coral-red-reverse-navbar.css" />
+    <Content Include="assets\css\skin\coral-red\coral-red.css" />
+    <Content Include="assets\css\skin\coral\coral-reverse-navbar.css" />
+    <Content Include="assets\css\skin\coral\coral.css" />
+    <Content Include="assets\css\skin\default\default-reverse-navbar.css" />
+    <Content Include="assets\css\skin\default\default.css" />
+    <Content Include="assets\css\skin\lapis\lapis-reverse-navbar.css" />
+    <Content Include="assets\css\skin\lapis\lapis.css" />
+    <Content Include="assets\css\skin\light-teal\light-teal-reverse-navbar.css" />
+    <Content Include="assets\css\skin\light-teal\light-teal.css" />
+    <Content Include="assets\css\skin\pattern\pattern-1.css" />
+    <Content Include="assets\css\skin\tan\tan-reverse-navbar.css" />
+    <Content Include="assets\css\skin\tan\tan.css" />
+    <Content Include="assets\css\slidebars\slidebars.css" />
+    <Content Include="assets\css\slidebars\slidebars.min.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\images\favicon.jpg" />
+    <Content Include="assets\images\pattern\sample-line.png" />
+    <Content Include="assets\js\bootstrap\bootstrap.js" />
+    <Content Include="assets\js\bootstrap\bootstrap.min.js" />
+    <Content Include="assets\js\bootstrap\npm.js" />
+    <Content Include="assets\js\countdown\jquery.countdown-custom-label.js" />
+    <Content Include="assets\js\countdown\jquery.countdown.js" />
+    <Content Include="assets\js\countdown\jquery.countdown.min.js" />
+    <Content Include="assets\js\countdown\jquery.plugin.js" />
+    <Content Include="assets\js\countdown\jquery.plugin.min.js" />
+    <Content Include="assets\js\devicejs\device.js" />
+    <Content Include="assets\js\devicejs\device.min.js" />
+    <Content Include="assets\js\flexslider\jquery.flexslider-min.js" />
+    <Content Include="assets\js\flexslider\jquery.flexslider.js" />
+    <Content Include="assets\js\jquery-1.11.1.min.js" />
+    <Content Include="assets\js\jquery-doubletaptogo\jquery.dcd.doubletaptogo.js" />
+    <Content Include="assets\js\jquery-ui-widget\jquery.ui.widget.js" />
+    <Content Include="assets\js\jquery-ui-widget\jquery.ui.widget.min.js" />
+    <Content Include="assets\js\magnific-popup\jquery.magnific-popup.js" />
+    <Content Include="assets\js\magnific-popup\jquery.magnific-popup.min.js" />
+    <Content Include="assets\js\main-slider-fade.js" />
+    <Content Include="assets\js\main-slider-image-animation.js" />
+    <Content Include="assets\js\main-slider-image-title-animation.js" />
+    <Content Include="assets\js\main-slider-slide.js" />
+    <Content Include="assets\js\main-slider-title-animation.js" />
+    <Content Include="assets\js\map-script.js" />
+    <Content Include="assets\js\markerlabel\markerwithlabel.js" />
+    <Content Include="assets\js\masonry\masonry.pkgd.min.js" />
+    <Content Include="assets\js\modernizr\modernizr.js" />
+    <Content Include="assets\js\owlcarousel\owl.carousel.js" />
+    <Content Include="assets\js\owlcarousel\owl.carousel.min.js" />
+    <Content Include="assets\js\pace\pace.min.js" />
+    <Content Include="assets\js\parallax\jquery.parallax-1.1.3.js" />
+    <Content Include="assets\js\rsvp\rsvp.js" />
+    <Content Include="assets\js\script.js" />
+    <Content Include="assets\js\side-navbar.js" />
+    <Content Include="assets\js\slidebars\slidebars.js" />
+    <Content Include="assets\js\slidebars\slidebars.min.js" />
+    <Content Include="assets\js\smoothscroll\jquery.smooth-scroll.js" />
+    <Content Include="assets\js\smoothscroll\jquery.smooth-scroll.min.js" />
+    <Content Include="assets\js\stellar\jquery.stellar.js" />
+    <Content Include="assets\js\sticky\jquery.sticky.js" />
+    <Content Include="assets\js\tinynav\tinynav.js" />
+    <Content Include="assets\js\tinynav\tinynav.min.js" />
+    <Content Include="assets\js\vide\jquery.vide.js" />
+    <Content Include="assets\js\waypoint\jquery.waypoints.min.js" />
+    <Content Include="assets\js\waypoint\noframework.waypoints.min.js" />
+    <Content Include="assets\js\waypoint\trash\noframework.waypoints.min.js" />
+    <Content Include="assets\js\waypoint\trash\waypoints.min.js" />
+    <Content Include="Content\side-bar\accomodation.html" />
+    <Content Include="Content\side-bar\css\animate\animate.css" />
+    <Content Include="Content\side-bar\css\bootstrap\bootstrap-theme.css" />
+    <Content Include="Content\side-bar\css\bootstrap\bootstrap-theme.min.css" />
+    <Content Include="Content\side-bar\css\bootstrap\bootstrap.css" />
+    <Content Include="Content\side-bar\css\bootstrap\bootstrap.min.css" />
+    <Content Include="Content\side-bar\css\countdown\jquery.countdown.css" />
+    <Content Include="Content\side-bar\css\flexslider\flexslider.css" />
+    <Content Include="Content\side-bar\css\flexslider\fonts\flexslider-icon.svg" />
+    <Content Include="Content\side-bar\css\flexslider\images\bg_play_pause.png" />
+    <Content Include="Content\side-bar\css\fonts\fontello\css\animation.css" />
+    <Content Include="Content\side-bar\css\fonts\fontello\css\fontello-codes.css" />
+    <Content Include="Content\side-bar\css\fonts\fontello\css\fontello-embedded.css" />
+    <Content Include="Content\side-bar\css\fonts\fontello\css\fontello-ie7-codes.css" />
+    <Content Include="Content\side-bar\css\fonts\fontello\css\fontello-ie7.css" />
+    <Content Include="Content\side-bar\css\fonts\fontello\css\fontello.css" />
+    <Content Include="Content\side-bar\css\fonts\fontello\demo.html" />
+    <Content Include="Content\side-bar\css\fonts\fontello\font\fontello.svg" />
+    <Content Include="Content\side-bar\css\fonts\fontello\LICENSE.txt" />
+    <Content Include="Content\side-bar\css\fonts\fontello\README.txt" />
+    <Content Include="Content\side-bar\css\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\side-bar\css\magnific-popup\magnific-popup.css" />
+    <Content Include="Content\side-bar\css\magnific-popup\pace\pace-theme-minimal.tmpl.css" />
+    <Content Include="Content\side-bar\css\owlcarousel\AjaxLoader.gif" />
+    <Content Include="Content\side-bar\css\owlcarousel\grabbing.png" />
+    <Content Include="Content\side-bar\css\owlcarousel\owl.carousel.css" />
+    <Content Include="Content\side-bar\css\owlcarousel\owl.theme.css" />
+    <Content Include="Content\side-bar\css\owlcarousel\owl.transitions.css" />
+    <Content Include="Content\side-bar\css\preloader-couple-name.css" />
+    <Content Include="Content\side-bar\css\preloader-default.css" />
+    <Content Include="Content\side-bar\css\preloader.css" />
+    <Content Include="Content\side-bar\css\skin\coral-red\coral-red-reverse-navbar.css" />
+    <Content Include="Content\side-bar\css\skin\coral-red\coral-red.css" />
+    <Content Include="Content\side-bar\css\skin\coral\coral-reverse-navbar.css" />
+    <Content Include="Content\side-bar\css\skin\coral\coral.css" />
+    <Content Include="Content\side-bar\css\skin\default\default-reverse-navbar.css" />
+    <Content Include="Content\side-bar\css\skin\default\default.css" />
+    <Content Include="Content\side-bar\css\skin\lapis\lapis-reverse-navbar.css" />
+    <Content Include="Content\side-bar\css\skin\lapis\lapis.css" />
+    <Content Include="Content\side-bar\css\skin\light-teal\light-teal-reverse-navbar.css" />
+    <Content Include="Content\side-bar\css\skin\light-teal\light-teal.css" />
+    <Content Include="Content\side-bar\css\skin\pattern\pattern-1.css" />
+    <Content Include="Content\side-bar\css\skin\tan\tan-reverse-navbar.css" />
+    <Content Include="Content\side-bar\css\skin\tan\tan.css" />
+    <Content Include="Content\side-bar\css\slidebars\slidebars.css" />
+    <Content Include="Content\side-bar\css\slidebars\slidebars.min.css" />
+    <Content Include="Content\side-bar\css\style.css" />
+    <Content Include="Content\side-bar\gallery-full-3col.html" />
+    <Content Include="Content\side-bar\gallery-full-4col.html" />
+    <Content Include="Content\side-bar\gallery-full-5col.html" />
+    <Content Include="Content\side-bar\gallery-slider.html" />
+    <Content Include="Content\side-bar\gallery.html" />
+    <Content Include="Content\side-bar\gift.html" />
+    <Content Include="Content\side-bar\groomsmen-gallery.html" />
+    <Content Include="Content\side-bar\groomsmen-parallax-image.html" />
+    <Content Include="Content\side-bar\images\favicon.jpg" />
+    <Content Include="Content\side-bar\images\pattern\sample-line.png" />
+    <Content Include="Content\side-bar\index-image-animation-v1.html" />
+    <Content Include="Content\side-bar\index-image-animation-v2.html" />
+    <Content Include="Content\side-bar\index-image-title-animation.html" />
+    <Content Include="Content\side-bar\index-left-bar.html" />
+    <Content Include="Content\side-bar\index-preloader-couple-name.html" />
+    <Content Include="Content\side-bar\index-preloader-logo-spinner.html" />
+    <Content Include="Content\side-bar\index-slide.html" />
+    <Content Include="Content\side-bar\index-title-animation.html" />
+    <Content Include="Content\side-bar\index-video.html" />
+    <Content Include="Content\side-bar\index.html" />
+    <Content Include="Content\side-bar\js\bootstrap\bootstrap.js" />
+    <Content Include="Content\side-bar\js\bootstrap\bootstrap.min.js" />
+    <Content Include="Content\side-bar\js\bootstrap\npm.js" />
+    <Content Include="Content\side-bar\js\countdown\jquery.countdown-custom-label.js" />
+    <Content Include="Content\side-bar\js\countdown\jquery.countdown.js" />
+    <Content Include="Content\side-bar\js\countdown\jquery.countdown.min.js" />
+    <Content Include="Content\side-bar\js\countdown\jquery.plugin.js" />
+    <Content Include="Content\side-bar\js\countdown\jquery.plugin.min.js" />
+    <Content Include="Content\side-bar\js\devicejs\device.js" />
+    <Content Include="Content\side-bar\js\devicejs\device.min.js" />
+    <Content Include="Content\side-bar\js\flexslider\jquery.flexslider-min.js" />
+    <Content Include="Content\side-bar\js\flexslider\jquery.flexslider.js" />
+    <Content Include="Content\side-bar\js\jquery-1.11.1.min.js" />
+    <Content Include="Content\side-bar\js\jquery-doubletaptogo\jquery.dcd.doubletaptogo.js" />
+    <Content Include="Content\side-bar\js\jquery-ui-widget\jquery.ui.widget.js" />
+    <Content Include="Content\side-bar\js\jquery-ui-widget\jquery.ui.widget.min.js" />
+    <Content Include="Content\side-bar\js\magnific-popup\jquery.magnific-popup.js" />
+    <Content Include="Content\side-bar\js\magnific-popup\jquery.magnific-popup.min.js" />
+    <Content Include="Content\side-bar\js\main-slider-fade.js" />
+    <Content Include="Content\side-bar\js\main-slider-image-animation.js" />
+    <Content Include="Content\side-bar\js\main-slider-image-title-animation.js" />
+    <Content Include="Content\side-bar\js\main-slider-slide.js" />
+    <Content Include="Content\side-bar\js\main-slider-title-animation.js" />
+    <Content Include="Content\side-bar\js\map-script.js" />
+    <Content Include="Content\side-bar\js\markerlabel\markerwithlabel.js" />
+    <Content Include="Content\side-bar\js\masonry\masonry.pkgd.min.js" />
+    <Content Include="Content\side-bar\js\modernizr\modernizr.js" />
+    <Content Include="Content\side-bar\js\owlcarousel\owl.carousel.js" />
+    <Content Include="Content\side-bar\js\owlcarousel\owl.carousel.min.js" />
+    <Content Include="Content\side-bar\js\pace\pace.min.js" />
+    <Content Include="Content\side-bar\js\parallax\jquery.parallax-1.1.3.js" />
+    <Content Include="Content\side-bar\js\rsvp\rsvp.js" />
+    <Content Include="Content\side-bar\js\script.js" />
+    <Content Include="Content\side-bar\js\side-navbar.js" />
+    <Content Include="Content\side-bar\js\slidebars\slidebars.js" />
+    <Content Include="Content\side-bar\js\slidebars\slidebars.min.js" />
+    <Content Include="Content\side-bar\js\smoothscroll\jquery.smooth-scroll.js" />
+    <Content Include="Content\side-bar\js\smoothscroll\jquery.smooth-scroll.min.js" />
+    <Content Include="Content\side-bar\js\stellar\jquery.stellar.js" />
+    <Content Include="Content\side-bar\js\sticky\jquery.sticky.js" />
+    <Content Include="Content\side-bar\js\tinynav\tinynav.js" />
+    <Content Include="Content\side-bar\js\tinynav\tinynav.min.js" />
+    <Content Include="Content\side-bar\js\vide\jquery.vide.js" />
+    <Content Include="Content\side-bar\js\waypoint\jquery.waypoints.min.js" />
+    <Content Include="Content\side-bar\js\waypoint\noframework.waypoints.min.js" />
+    <Content Include="Content\side-bar\js\waypoint\trash\noframework.waypoints.min.js" />
+    <Content Include="Content\side-bar\js\waypoint\trash\waypoints.min.js" />
+    <Content Include="Content\side-bar\location.html" />
+    <Content Include="Content\side-bar\page.html" />
+    <Content Include="Content\side-bar\profile-her.html" />
+    <Content Include="Content\side-bar\profile-him.html" />
+    <Content Include="Content\side-bar\rsvp-1.html" />
+    <Content Include="Content\side-bar\rsvp-2.html" />
+    <Content Include="Content\side-bar\rsvp-3.html" />
+    <Content Include="Content\side-bar\rsvp-custom.html" />
+    <Content Include="Content\side-bar\the-story.html" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\side-bar\css\bootstrap\bootstrap-theme.css.map" />
+    <Content Include="Content\side-bar\css\bootstrap\bootstrap.css.map" />
+    <Content Include="Content\side-bar\css\flexslider\fonts\flexslider-icon.eot" />
+    <Content Include="Content\side-bar\css\flexslider\fonts\flexslider-icon.ttf" />
+    <Content Include="Content\side-bar\css\flexslider\fonts\flexslider-icon.woff" />
+    <Content Include="Content\side-bar\css\fonts\fontello\config.json" />
+    <Content Include="Content\side-bar\css\fonts\fontello\font\fontello.eot" />
+    <Content Include="Content\side-bar\css\fonts\fontello\font\fontello.ttf" />
+    <Content Include="Content\side-bar\css\fonts\fontello\font\fontello.woff" />
+    <Content Include="Content\side-bar\css\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\side-bar\css\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\side-bar\css\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\side-bar\rsvp.php" />
+    <Content Include="assets\css\bootstrap\bootstrap-theme.css.map" />
+    <Content Include="assets\css\bootstrap\bootstrap.css.map" />
+    <Content Include="assets\css\flexslider\fonts\flexslider-icon.eot" />
+    <Content Include="assets\css\flexslider\fonts\flexslider-icon.ttf" />
+    <Content Include="assets\css\flexslider\fonts\flexslider-icon.woff" />
+    <Content Include="assets\css\fonts\fontello\config.json" />
+    <Content Include="assets\css\fonts\fontello\font\fontello.eot" />
+    <Content Include="assets\css\fonts\fontello\font\fontello.ttf" />
+    <Content Include="assets\css\fonts\fontello\font\fontello.woff" />
+    <Content Include="assets\css\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\css\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\css\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="assets\audio\" />
+    <Folder Include="assets\video\" />
+    <Folder Include="Content\side-bar\audio\" />
+    <Folder Include="Content\side-bar\video\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\app-latimerwedding - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\app-latimerwedding - Web Deploy.pubxml" />
+    <Content Include="Views\Home\Him.cshtml" />
+    <Content Include="Views\Home\Her.cshtml" />
+    <Content Include="Views\Home\Location.cshtml" />
+    <Content Include="Views\Home\Registry.cshtml" />
+    <Content Include="Views\Home\Rsvp.cshtml" />
+    <Content Include="Views\Home\Gallery.cshtml" />
+    <Content Include="Views\Shared\_SideNavbar.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>9396</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:9396/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
