@@ -11,10 +11,8 @@
       $(function () {
         $('body').addClass('penis-mode');
         
-
-        $("div, p").text(function (_, ctx) {
-    return ctx.replace("the", "<span class=\"text-penis\">PENIS</span>");
-        });
+        $("div, p").text($("div, p").text().replace("the", "<span class=\"text-penis\">PENIS</span>"));
+       
 
 
         //$("div, p").each(function() {
