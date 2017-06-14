@@ -5,10 +5,11 @@
 
 @section scripts {
   <script>
+    $(function () {
     var isPenisMode = "@isPenisMode";
     console.log('isPenisMode: ' +isPenisMode);
-    if (isPenisMode) {
-      $(function () {
+    if (isPenisMode === 'True') {
+      
 
         function replaceAll(str, find, replace) {
   return str.replace(new RegExp(find, 'g'), replace);
@@ -27,8 +28,9 @@
        
        
 
+      }
+      
       });
-    }
   </script>
   }
 
