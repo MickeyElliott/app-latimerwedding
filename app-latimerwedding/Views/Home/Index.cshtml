@@ -9,13 +9,19 @@
 
     if (isPenisMode) {
       $(function () {
+
+        function replaceAll(str, find, replace) {
+  return str.replace(new RegExp(find, 'g'), replace);
+        }
+
+
         $('body').addClass('penis-mode');
         
         $('body p').each(function (i) {
           $this = $(this);
           var txt = $this.text();
-          var n = txt.replace('/the/g','<span class=\"text-penis\">PENIS</span>');
-          $this.html(n);
+          replaceAll(txt,'the','<span class="text-penis">PENIS</span>');
+         
 					
 				})	
        
