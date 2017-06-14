@@ -12,10 +12,15 @@
         $('body').addClass('penis-mode');
         
 
-        $("div:contains('the'), p:contains('the')").each(function() {
-          var replaced = $(this).html().replace(/the/g, '<span class="text-penis">PENIS</span>');
-          $(this).html(replaced);
+        $("div, p").text(function (_, ctx) {
+    return ctx.replace("the", "<span class=\"text-penis\">PENIS</span>");
         });
+
+
+        //$("div, p").each(function() {
+        //  var replaced = $(this).html().replace(/the/g, '<span class="text-penis">PENIS</span>');
+        //  $(this).html(replaced);
+        //});
 
       });
     }
