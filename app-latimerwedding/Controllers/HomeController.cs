@@ -12,7 +12,6 @@ namespace app_latimerwedding.Controllers
         {
             if (!string.IsNullOrEmpty(id) && id.Trim().ToLower() == "penis")
             {
-                Session["PenisMode"] = true;
                 ViewBag.PenisMode = true;
                 //Response.Redirect("/");
             }

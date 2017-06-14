@@ -3,6 +3,34 @@
     var isPenisMode = (ViewBag.PenisMode != null) ? ViewBag.PenisMode : false;
 }
 
+@section scripts {
+  <script>
+    var isPenisMode = "@isPenisMode";
+
+    if (isPenisMode) {
+      $(function () {
+        $('body').addClass('penis-mode');
+        
+        $('body p').each(function (i) {
+          $this = $(this);
+          var txt = $this.text();
+          var n = txt.replace('the','<span class=\"text-penis\">PENIS</span>');
+          $this.html(n);
+					
+				})	
+       
+       
+
+        //$("div, p").each(function() {
+        //  var replaced = $(this).html().replace(/the/g, '<span class="text-penis">PENIS</span>');
+        //  $(this).html(replaced);
+        //});
+
+      });
+    }
+  </script>
+  }
+
 <!-- MAIN SLIDER -->
 <section id="main-slider" class="flexslider fullscreen">
 
