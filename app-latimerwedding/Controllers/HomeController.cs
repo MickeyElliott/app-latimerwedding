@@ -8,8 +8,14 @@ namespace app_latimerwedding.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Index(string id)
         {
+            if (!string.IsNullOrEmpty(id) && id.Trim().ToLower() == "penis")
+            {
+                Session["PenisMode"] = true;
+                ViewBag.PenisMode = true;
+                //Response.Redirect("/");
+            }
             return View();
         }
 
