@@ -11,11 +11,11 @@
       $(function () {
         $('body').addClass('penis-mode');
         
-        $('p').each(function (i) {
+        $('body p').each(function (i) {
           $this = $(this);
           var txt = $this.text();
-          txt.replace('the','<span class=\"text-penis\">PENIS</span>');
-          $(this).text(txt);
+          var n = txt.replace('the','<span class=\"text-penis\">PENIS</span>');
+          $this.html(n);
 					
 				})	
        
