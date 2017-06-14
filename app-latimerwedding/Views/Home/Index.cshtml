@@ -1,5 +1,6 @@
 ﻿@{
     ViewBag.Title = "Home Page";
+    var isPenisMode = (ViewBag.PenisMode != null) ? ViewBag.PenisMode : false;
 }
 
 <!-- MAIN SLIDER -->
@@ -50,7 +51,7 @@
 
     <li>
       <!-- SLIDE IMAGE -->
-      <div data-stellar-ratio="0.5" class="slide-image" style="background-image:url(/assets/images/header-01.jpg);">
+      <div data-stellar-ratio="0.5" class="slide-image" style="background-image:url(/assets/images/header-01@((isPenisMode)?"-penis":"").jpg);">
       </div>
 
       <!-- SLIDE OVERLAY -->
