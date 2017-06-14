@@ -400,6 +400,7 @@
     <Folder Include="assets\video\" />
     <Folder Include="Content\side-bar\audio\" />
     <Folder Include="Content\side-bar\video\" />
+    <Folder Include="Content\working\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
