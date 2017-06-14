@@ -380,6 +380,7 @@
     <Content Include="assets\css\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="assets\css\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="assets\css\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\images\parralax03.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
