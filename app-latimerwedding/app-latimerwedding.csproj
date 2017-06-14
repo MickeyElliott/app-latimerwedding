@@ -400,13 +400,30 @@
     <Folder Include="assets\video\" />
     <Folder Include="Content\side-bar\audio\" />
     <Folder Include="Content\side-bar\video\" />
-    <Folder Include="Content\working\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\working\Fonts\Amarillo.ttf" />
+    <Content Include="Content\working\Fonts\BebasNeue.otf" />
+    <Content Include="Content\working\Fonts\Roboto-Black.ttf" />
+    <Content Include="Content\working\Fonts\Roboto-BlackItalic.ttf" />
+    <Content Include="Content\working\Fonts\Roboto-Bold.ttf" />
+    <Content Include="Content\working\Fonts\Roboto-BoldCondensed.ttf" />
+    <Content Include="Content\working\Fonts\Roboto-BoldCondensedItalic.ttf" />
+    <Content Include="Content\working\Fonts\Roboto-BoldItalic.ttf" />
+    <Content Include="Content\working\Fonts\Roboto-Condensed.ttf" />
+    <Content Include="Content\working\Fonts\Roboto-CondensedItalic.ttf" />
+    <Content Include="Content\working\Fonts\Roboto-Italic.ttf" />
+    <Content Include="Content\working\Fonts\Roboto-Light.ttf" />
+    <Content Include="Content\working\Fonts\Roboto-LightItalic.ttf" />
+    <Content Include="Content\working\Fonts\Roboto-Medium.ttf" />
+    <Content Include="Content\working\Fonts\Roboto-MediumItalic.ttf" />
+    <Content Include="Content\working\Fonts\Roboto-Regular.ttf" />
+    <Content Include="Content\working\Fonts\Roboto-Thin.ttf" />
+    <Content Include="Content\working\Fonts\Roboto-ThinItalic.ttf" />
     <None Include="Properties\PublishProfiles\app-latimerwedding - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\app-latimerwedding - Web Deploy.pubxml" />
     <Content Include="Views\Home\Him.cshtml" />
