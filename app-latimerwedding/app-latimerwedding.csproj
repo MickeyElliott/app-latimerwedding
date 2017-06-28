@@ -429,8 +429,6 @@
     <Content Include="Content\working\Fonts\Roboto-ThinItalic.ttf" />
     <None Include="Properties\PublishProfiles\app-latimerwedding - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\app-latimerwedding - Web Deploy.pubxml" />
-    <Content Include="Views\Home\Him.cshtml" />
-    <Content Include="Views\Home\Her.cshtml" />
     <Content Include="Views\Home\Location.cshtml" />
     <Content Include="Views\Home\Registry.cshtml" />
     <Content Include="Views\Home\Rsvp.cshtml" />
